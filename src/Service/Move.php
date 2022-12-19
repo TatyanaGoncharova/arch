@@ -2,10 +2,13 @@
 
 namespace App\Service;
 
+use App\Contract\CommandInterface;
 use App\Contract\MovableInterface;
+use InvalidArgumentException;
+use RuntimeException;
 
 
-class Move
+class Move implements CommandInterface
 {
     /**
      * @var MovableInterface
