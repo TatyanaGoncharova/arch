@@ -2,9 +2,10 @@
 
 namespace App\Service;
 
+use App\Contract\CommandInterface;
 use App\Contract\RotableInterface;
 
-class Rotate
+class Rotate implements CommandInterface
 {
     private RotableInterface $rotate;
 
