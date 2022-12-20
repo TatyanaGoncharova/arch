@@ -11,7 +11,8 @@ class Vector
      * @param float $x
      * @param float $y
      */
-    public function __construct(float $x, float $y){
+    public function __construct(float $x, float $y)
+    {
         $this->x = $x;
         $this->y = $y;
     }
@@ -30,5 +31,15 @@ class Vector
     public function getY(): float
     {
         return $this->y;
+    }
+
+    public function toArray(): array
+    {
+        return ['X' => $this->x, 'Y' => $this->y];
+    }
+
+    public function toJson(): bool|string
+    {
+        return json_encode($this->toArray());
     }
 }

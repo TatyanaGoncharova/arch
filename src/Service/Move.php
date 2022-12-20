@@ -2,10 +2,11 @@
 
 namespace App\Service;
 
+use App\Contract\CommandInterface;
 use App\Contract\MovableInterface;
 
 
-class Move
+class Move implements CommandInterface
 {
     /**
      * @var MovableInterface

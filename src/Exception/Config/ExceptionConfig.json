@@ -1,0 +1,9 @@
+{
+  "App\\Service\\Move": {
+    "InvalidArgumentException": "App\\Service\\Log",
+    "RuntimeException": "App\\Service\\Repeat"
+  },
+  "App\\Service\\Repeat" : {
+    "RuntimeException": "App\\Service\\Log"
+  }
+}
