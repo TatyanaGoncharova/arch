@@ -27,7 +27,7 @@ class MoveController
         } catch (\Throwable $exception){
             (new ExceptionHandler())->handle($moveService, $exception);
         }
-        
+
         return new JsonResponse();
     }
 
